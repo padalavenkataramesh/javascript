@@ -1,0 +1,38 @@
+1) declare variables (global, local)
+2) functions and accessing variables within functions
+3) passing values with or ||
+4) typeof (number,string, boolean,object,function)
+	Types
+	Number
+	String
+	Undefined
+	Boolean
+	Object
+	function
+5) self functions
+6) self funciton with aruments
+7) compares values & values with types
+8) typecasts int float and string
+9) get date new Date();
+-----------------------------------------------------------------
+10) object  declartion & accessing, Assing object, delete object.
+Number
+String
+Undefined
+Boolean
+Object -> date,null, object -
+(literal way,new object,object.create, object.constructor)
+function
+11) Arrays, Class creating - (loop types),jagged etc.
+
+(for statement
+do...while statement
+while statement
+labeled statement
+break statement
+continue statement
+for...in statement
+for...of statement
+)
+
+12)
