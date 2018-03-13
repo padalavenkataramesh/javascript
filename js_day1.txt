@@ -35,4 +35,3 @@ for...in statement
 for...of statement
 )
 
-12)
