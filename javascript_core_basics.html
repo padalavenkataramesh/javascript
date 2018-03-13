@@ -1,0 +1,856 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice 4.1.3  (Win32)">
+	<META NAME="CREATED" CONTENT="20180312;12260500">
+	<META NAME="CHANGED" CONTENT="0;0">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { margin: 0.79in }
+		P { margin-bottom: 0.08in; direction: ltr; color: #000000; widows: 0; orphans: 0 }
+		P.western { font-family: "Times New Roman", serif; font-size: 12pt; so-language: en-US }
+		P.cjk { font-family: "SimSun"; font-size: 12pt; so-language: zh-CN }
+		P.ctl { font-family: "Mangal"; font-size: 12pt; so-language: hi-IN }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="en-US" TEXT="#000000" DIR="LTR">
+<P CLASS="western" STYLE="margin-bottom: 0in">Syntax for creating a
+variable</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">var variableName =
+defaultValue;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">var x = 10;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">var y; -&gt; y is
+undefined</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">Viewing values</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">alert(x) -&gt; in a
+popup</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">console.log(x) -&gt;
+prints value to console</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">Syntax for creating a
+function</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><B>// Approach 1 &ndash;
+variable argument passing ways.</B></P>
+<P CLASS="western" STYLE="margin-bottom: 0in">function
+functionName(){</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">function welcome(){</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	console.log('Welcome
+to Demo');</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">// executing a function</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">functionName();</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">welcome() -&gt; prints
+Welcome to Demo in console.</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">function addition(x, y)
+{</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	var z = x + y;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	console.log('result is
+' + z);</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">function subtraction(x,
+y) {</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	console.log(' x value
+is ' + x);</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	console.log(' y value
+is ' + y);</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	var z = x - y;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	console.log('result is
+' + z);</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">subtraction(1, 2, 3) -&gt;
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">1 will be copied to x, 
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">2 will be copied to y 
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">and 3 will be ignored.</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">Additional Params are
+ignored.</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">subtraction(1) -&gt;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">x is 1</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">y is undefined</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">result is Nan -&gt; Not
+a number</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">Not passed in params
+considered undefined</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">type -&gt; Predefined
+function. It returns type of variable</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">var x = 10;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">typeof(x) -&gt; number</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">var y = &quot;Hello&quot;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">typeof(y) -&gt; string</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">var z;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">typeof(z) -&gt;
+undefined</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">var a = true;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">typeof(a) -&gt; boolean</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">// Handling undefined</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">function subtraction(x,
+y) {</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	x = x || 0;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	y = y || 0;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	console.log(' x value
+is ' + x);</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	console.log(' y value
+is ' + y);</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	var z = x - y;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	console.log('result is
+' + z);</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><B>// Approach 2 to
+create a function</B></P>
+<P CLASS="western" STYLE="margin-bottom: 0in">// syntax</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">var functionName =
+function() {}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">var Multiplication =
+function(x, y){</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	x = x || 1;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	y = y || 1;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	var z = x * y;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	console.log('result is
+' + z);</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">// self executing
+function</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">// syntax</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">(function
+functionName(params){})();</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">(function division(x,
+y){</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	x = x || 0;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	y = y || 1;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	var z = x / y;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	console.log('result is
+' + z);</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">})();</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">// passing values</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">(function division(x,
+y){</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	x = x || 0;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	y = y || 1;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	var z = x / y;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	console.log('result is
+' + z);</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">})(10, 2);</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">var result = (function
+division(x, y){</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	x = x || 0;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	y = y || 1;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	var z = x / y;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	console.log('result is
+' + z);</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	return z;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">})(10, 2);</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">-&gt; result is 5</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">function
+process(termiateInMiddle){</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	console.log('Started')</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	if(termiateInMiddle) {</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		console.log('Terminated');</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		return;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	console.log('End');</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">== compares only value</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">===  compares both
+value and type 
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">1 == 1 -&gt; true</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">1 == &quot;1&quot; -&gt;
+true</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">1 === 1 -&gt; true</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">1 === &quot;1&quot; -&gt;
+false</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">parseInt(&quot;10&quot;)
+-&gt; 10</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">parseInt(&quot;10.8&quot;)
+-&gt; 10 -&gt; it just removes decimals and not rounding off</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">parseFloat(&quot;10.8&quot;)
+-&gt; 10.8</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">var x = 10;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">x.toString() -&gt;
+converts number to string</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">new Date() -&gt; gets
+current date</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in; border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.03in; padding-left: 0in; padding-right: 0in">
+<BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><B>session
+&ndash; 2</B></P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><B>// Object </B>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">// key value pair</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">// key can be string or
+numeric but dont give spaces</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">// value	-</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">				Numeric</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">				Boolean</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">				String</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">				function</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">				Other Object -&gt;
+Nested Object</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">				</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">var person = {</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	firstName: 'Arjun',</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	lastName: 'Krishna'</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><B>// Accessing a value</B></P>
+<P CLASS="western" STYLE="margin-bottom: 0in">person.firstName</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">person['lastName']</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><B>// updating/adding a
+value</B></P>
+<P CLASS="western" STYLE="margin-bottom: 0in">person.firstName =
+'Deepak'</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">person['city'] =
+'Hyderabad'</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">delete person.city -&gt;
+deletes city key.</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	https://github.com/mkrishna2025</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">Types</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	Number</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	String</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	Undefined</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	Boolean</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	Object</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">------------</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">var calculator = {</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	addition: function(x,
+y){</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		return x + y;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	},</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	subtraction:
+function(x, y){</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		return x - y;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">calculator.multiplication
+= function(x, y) { return x * y; }</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">calculator['division']
+= function(x, y) { return x / y; }</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">calculator.addition(1,
+2) -&gt; 3</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">calculator['subtraction'](1,2)
+-&gt; -1</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">// Creating array</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">var array = ['Krishna',
+'Rakesh', 'Venkat'];</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">array[0] -&gt;
+&quot;Krishna&quot;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">array[1] -&gt; &quot;Rakesh&quot;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">array[2] -&gt; &quot;Venkat&quot;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">array[3] -&gt;
+undefined -&gt; it will not throw exception</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">array.push('Neha') -&gt;
+adding item to array</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">array.pop() -&gt;
+removing last item from array</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">var x = array.pop(); -&gt;
+last item is copied to variable and removed</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">// Printing an array</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">// Approach - 1 
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">for(var index = 0;
+index &lt; array.length ; index++){</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	console.log('index is
+' + index);</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	var item =
+array[index];</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	console.log('item is '
++ item);</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">// Approach - 2 - for
+in</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">for(var index in
+array){</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	console.log('index is
+' + index);</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	var item =
+array[index];</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	console.log('item is '
++ item);</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">// Approach - 3 - for
+of</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">for(var item of array){</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	console.log('item is '
++ item);</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">person.address =
+['Ameerpet', 'Kukatpally']; -&gt; adds 2 items in key address</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">person.address[1] -&gt;
+Kukatpally</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">person.address = [</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	{line1: 'Ameerpet',
+line2: '1/2/333'}, 
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	{line1: 'Kukatpally',
+line2: '1/23/333'} 
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"> ]</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">person.address[1].line1
+-&gt; Kukatpally</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">person.address[1]['line1']
+-&gt; Kukatpally</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">// Jagged Array</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">var array2 = [ 1,
+&quot;Hello&quot;, function(x, y) { return x + y; } ]</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">var result =
+array2[2](1,2) -&gt; result = 3</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">https://www.w3schools.com/js/js_array_methods.asp</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">JSON.stringify -&gt;
+converts object to string</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">var personString =
+JSON.stringify(person);</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">JSON.parse -&gt;
+converts string to object</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">JSON.parse(personString)</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">// Creating a class</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">// Approach - 1</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">// syntax</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">var className =
+function(optional arguments for constructor){</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	// global
+variables/methods</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	// private
+variables/methods</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	return {</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		// public
+variables/methods</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">var Person =
+function(){</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	return {</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		printWelcome:
+function(){</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			console.log('Welcome
+to Demo');</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">var p1 = new Person();</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">p1.printWelcome() -&gt;
+Welcome to Demo</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">var p2 = new Person();</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">p2.printWelcome() -&gt;
+Welcome to Demo</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">p2.printWelcome =
+function(){</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	console.log('Welcome
+to overrided function');</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">p2.printWelcome() -&gt;
+Welcome to overrided function</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">p1.printWelcome() -&gt;
+Welcome to Demo -&gt; change in p2 is not affecting p1 instance</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">var Person =
+function(){</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	var returnItem = {</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		printWelcome:
+function(){</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			console.log('Welcome
+to Demo');</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	return returnItem;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">var Person2 =
+function(firstName, lastName) {</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	var returnItem = {</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		getFullName:
+function(){</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			return firstName + '
+' + lastName;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	return returnItem;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">var p1 = new
+Person2('Venkat', 'Kumar');</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">p1.getFullName() -&gt;
+Venkat Kumar</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">var p2 = new Person2();</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">p2.getFullName() -&gt;
+' undefined undefined'</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">var p3 = new
+Person2(1,2,3);</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">p3.getFullName() -&gt;
+'1 2'</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">// Handling undefined</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">var Person3 =
+function(firstName, lastName) {</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	firstName = firstName
+|| '';</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	lastName = lastName ||
+'';</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	var returnItem = {</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		getFullName:
+function(){</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			return firstName + '
+' + lastName;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	return returnItem;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">var p1 = new Person3();</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">p1.getFullName() -&gt;
+' '</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">// Having common object
+as constructor</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">var Person4 =
+function(options){</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	var returnItem = {</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		getFullName:
+function(){</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			return
+options.firstName + ' ' + options.lastName;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	return returnItem;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">var p1 = new Person4({
+firstName: 'Kiran', lastName: 'Kumar'});</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">p1.getFullName() -&gt;
+Kiran Kumar</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">var p2 = new Person4({ 
+lastName: 'Kumar', firstName: 'Prasad', age: 10});</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">p2.getFullName() -&gt;
+Prasad Kumar -&gt; 
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	No Need to follow any
+order</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	Passing values are not
+mandatory</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	Additional Keys passed
+in are ignored</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">Handling undefined</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">var Person5 =
+function(options) {</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	options = options ||
+{};</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	options.firstName =
+options.firstName || '';</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	options.lastName =
+options.lastName || '';</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	var returnItem = {</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		getFullName:
+function(){</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			return
+options.firstName + ' ' + options.lastName;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	return returnItem;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">var p2 = new Person5({
+lastName: 'Reddy'});</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">p2.getFullName() -&gt;
+Reddy -&gt; advantage is not to follow any order of params 
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">and no need to pass all
+keys</P>
+<P CLASS="western" STYLE="margin-bottom: 0in; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.03in; padding-left: 0in; padding-right: 0in">
+<BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"> <B>Session
+3:</B></P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">var Calculator =
+function(){</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	var printToConsole =
+function(result){</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		console.log('Result
+is ' + result);</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	var returnItem = {</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		addition: function(x,
+y) {</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			var z = x + y;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			printToConsole(z);</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			return z;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		},</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		subtraction:
+function(x, y) {</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			var z = x - y;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			printToConsole(z);</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			return z;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	return returnItem;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">// we can use normal
+named function also like below.</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">var Calculator =
+function(){</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	function
+printToConsole(result){</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		console.log('Result
+is ' + result);</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	var returnItem = {</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		addition: function(x,
+y) {</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			var z = x + y;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			printToConsole(z);</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			return z;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		},</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		subtraction:
+function(x, y) {</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			var z = x - y;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			printToConsole(z);</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			return z;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	return returnItem;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">//
+private/public/global example</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">var Calculator =
+function(){</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	// private method</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	var printToConsole =
+function(result){</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		console.log('Result
+is ' + result);</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	// global variable</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	pi = 3.14;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	testFramework =
+function() {</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		console.log('Framework
+Tested Successfully');</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	var returnItem = {</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		version: 1.0, //
+public variable</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		addition: function(x,
+y) {</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			var z = x + y;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			printToConsole(z);</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			return z;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		},</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		subtraction:
+function(x, y) {</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			var z = x - y;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			printToConsole(z);</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			return z;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	return returnItem;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">// Approach 2 for
+creating class</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">// syntax</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">var className =
+function(optional arguments for constructor){</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	// global
+variables/methods</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	// private
+variables/methods</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	this.</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">var Calculator =
+function(){</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	var printToConsole =
+function(result){</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		console.log('Result
+is ' + result);</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	this.version = 2.0;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	this.addition =
+function(x, y) {</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		var z = x + y;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		printToConsole(z);</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		return z;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	};</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	this.subtraction =
+function(x, y) {</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		var z = x - y;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		printToConsole(z);</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		return z;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">function
+printWelcome(user){</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	user = user || 'Admin'</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	console.log('Welcome
+to ' + user);</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">// executing function</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">// approach 1</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">printWelcome(); -&gt;
+Welcome to Admin</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">printWelcome('Rakesh');
+-&gt; Welcome to Rakesh</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">// approach 2</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">printWelcome.call() -&gt;
+Welcome to Admin</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">printWelcome.call(this,
+'Keerthi') -&gt; Welcome to Keerthi</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">var
+ScientificCalculator = function(){</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	Calculator.call(this);</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	this.areaOfTriangle =
+function() {</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	// overriding function</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	this.addition =
+function(x, y, z) {</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		return x + y + z;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">// Advantages of
+approach 2</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">Supporting Inheritance</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><B>Debug -1 </B>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">function test(){</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		var Calculator =
+function(){</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			var printToConsole =
+function(result){</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">				console.log('Result
+is ' + result);</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			var returnItem = {</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">				addition:
+function(x, y) {</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">					debugger;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">					var z = x + y;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">					printToConsole(z);</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">					return z;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">				},</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">				subtraction:
+function(x, y) {</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">					var z = x - y;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">					printToConsole(z);</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">					return z;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">				}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			return returnItem;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		var c1 = new
+Calculator();</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		debugger;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		c1.addition(1,2);</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><B>Debug -2 </B>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">function test(){</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		var Calculator =
+function(){</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			var printToConsole =
+function(result){</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">				console.log('Result
+is ' + result);</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			this.version = 2.0;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			this.addition =
+function(x, y) {</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">				var z = x + y;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">				printToConsole(z);</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">				return z;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			};</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			this.subtraction =
+function(x, y) {</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">				var z = x - y;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">				printToConsole(z);</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">				return z;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		var
+ScientificCalculator = function(){</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			this.areaOfTriangle
+= function() {</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			debugger;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			Calculator.call(this);</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">			</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		}</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		debugger;</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">		var s1 = new
+ScientificCalculator();</P>
+<P CLASS="western" STYLE="margin-bottom: 0in">	}</P>
+</BODY>
+</HTML>
