@@ -167,7 +167,7 @@ person['city'] = 'Hyderabad'
 
 delete person.city -> deletes city key.
 
-	https://github.com/mkrishna2025
+	
 	
 Object.keys(person) -> will return array of keys present inside person.
 	
