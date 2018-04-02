@@ -1,0 +1,134 @@
+5) What will be the output of the following code:
+ var x = 1; 
+var output = (function(){
+	
+delete x; 
+return x;
+
+})();
+
+console.log(output);
+o/p
+1
+
+6) What will be the output of the following code:
+
+var bar = true;
+console.log(bar+0);  
+console.log(bar+"xyz");
+console.log(bar+true);
+console.log(bar+false);
+
+O/P
+
+1
+truexyz
+2
+1
+7) what would the output of the following code?
+(function example(){
+
+	superPower();
+	function superPower(){
+		console.log("Flaying");
+	}
+})();
+
+8) what is the output of the below code?
+
+function print(...z){
+	console.log(z);
+
+}
+print(1,2,3,4);
+o/p 
+1, 2, 3, 4
+
+9) what would be the output of following code?
+
+(function(){
+
+	var objA = Object.create({
+		foo:"foo"
+	});
+
+	var objB = objA;
+	console.log(objA == objB);
+	console.log(objA === objB);
+	console.log(objA.toString()== objB.toString());
+	console.log(objA.toString()===objB.toString());
+
+})();  // else this end is }()); can specify.
+
+O/P 
+true
+true
+true
+true
+
+10)
+
+11) what is the output of the below code?
+
+function test(){
+	var d = j = g = 90;
+	console.log(d,j,g);
+	
+
+}
+test();
+console.log(g,j,d);
+
+O/P 
+90 90 90
+uncaught reference error: d is not defined
+12) what would the output of following code?
+
+var arr1 = "john".split('');
+var arr2 = arr1.reverse();
+var arr3 = "johns".split('');
+arr2.push(arr3);
+
+console.log("array 1:length="+arr1.length + "last="+arr1.slice(-1));
+console.log("array 2:length="+arr2.length + "last="+arr2.slice(-1));
+
+O/P
+array 1:length=5last=j,o,h,n,s
+array 2:length=5last=j,o,h,n,s
+
+13) What would the output of following code?
+for(var i=0;i<5; i++){
+	setTimeout(function(){ console.log(i);},i*1000);
+}
+O/P
+5
+14) what would the output of following code?
+
+(function(){
+	try{
+		throw new Error();
+	}catch(x){
+	
+		var x = 1; y=2;
+		console.log(x);
+		
+	}
+	console.log(x);
+	console.log(y);
+})();
+
+o/p:
+1
+undefined
+2
+
+15) What is the output of the below code?
+
+let c=[100,200,330,400];
+
+let[a,...b]=c;
+
+console.log(a,b);
+
+O/P
+100 200,330,400
