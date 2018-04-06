@@ -23,7 +23,7 @@ Boolean
 Object -> date,null, object -
 (literal way,new object,object.create, object.constructor)
 function
-11) Arrays, Class creating - (loop types),jagged etc.
+11) Arrays (Array.prototype to seee all array methods), Class creating - (loop types),jagged etc.
 
 (for statement
 do...while statement
@@ -34,4 +34,23 @@ continue statement
 for...in statement
 for...of statement
 )
-
+12) Ternary operator.
+13) classes and handing Undefined.
+14) this.
+15) access public variables and methods & private
+16) prototype - inject defined classes or predefined functions.
+17) call() and callback methods  ( like send mail) (debugging)
+18) simple inheritance example
+19) decode awesome.
+20) babble
+21) callback hells ( promisses, ganerator, (async, await)) ( q promisses in angular2) ( fetch or axios).
+22) ES6:->
+(Let and Const
+Arrow functions
+Default parameters
+for of loop
+Spread attributes
+Maps
+Sets
+Static methods
+Getters and Setters)
