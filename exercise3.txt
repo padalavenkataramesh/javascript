@@ -1,0 +1,55 @@
+1) js array merging 
+
+var ar1 = ["Cecilie", "Lone"];
+var 
+ar2 = ["Emil", "Tobias", "Linus"];
+
+var ar3 = ar1.concat(ar2);
+
+
+2) js object merging - Object.assign
+
+
+3) floor, ceil, round
+
+
+floor used to get values only number without taking decimal values
+1.55 - float -> 1
+
+Ceil used to get values increase one number of float number value 
+1.45 - float -> 2
+
+Round:- used to get value round the specific number 
+1.45 - round 1 
+1.51 - round 2
+
+4) toString to convert String
+toFixed to declare number of decimal values 
+
+var a = 10.000000 - a.toFixed(2)-> 10.00;
+
+5) Js arrays - 
+
+a) Insert values into array:- 
+array.unshift()-> value inserted at the first element of the array
+array.push()-> value inserted at the last element of the array
+array[10] = "testing" -> value inserted at the 11th position of thearray
+
+
+b) Remove values from array:- 
+
+array.shift() -> remove value from first element of the array
+array.pop() -> remove value from last element of the array
+unset(array.[10])-> remove value from 11th position of the array
+
+c) merge 2 arrays:- using array contcat to merge 2 arrays
+
+var arr1 = [1,2,3,4];
+var arr2 = [11,21,31,41];
+
+d) 
+ 
+
+
+
+

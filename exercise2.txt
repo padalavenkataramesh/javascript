@@ -1,0 +1,52 @@
+//- local & session storages:
+
+localStorage.setItem('name', "ramesh");
+localStorage.getItem('name'); //ramesh
+
+//or
+localStorage.name = "ramesh";
+localStorage.phone ="0123123123";
+
+console.log(localStorage.name);
+console.log(localStorage.phone);
+
+//- Difference Between sessionstate and viewstate in javascript
+- ViewState is specific to a page in a session. Session state refers to user specific data that can be accessed across all pages in the web application.
+
+View State
+
+– Maintained at page level only.
+– View state can only be visible from a single page and not multiple pages.
+– Information stored on the client’s end only.
+– View state will retain values in the event of a postback operation occurring.
+– View state is used to allow the persistence of page-instance-specific data.
+
+Session State
+
+– Maintained at session level.
+– Session state value availability is in all pages available in a user session.
+– Information in session state stored in the server.
+– In session state, user data remains in the server.  The availability of the data is guaranteed until either the user closes the session or the browser is closed.
+– Session state is used for the persistence of user-specific data on the server’s end.
+
+// Difference Between Hits and Visits
+1.A hit is a request for a file for download from the server whereas when a user opens a
+website to view some page it is referred to as a visit.
+2. A hit may be a request for a graphic file, an HTML file, an audio file, etc. while visits
+consist of one or more page views/hits.
+3. The hits represent the total number of physical resources that were requested from
+the server whereas a visit represents the number of times the user visits the website
+to view a single page or multiple pages.
+4. Hits provide information about the total number of files downloaded or the total number
+of pages viewed by the potential customers whereas a visit provides information about
+the total number of potential visitors to the website.
+
+
+//Difference between sessionstorage, localstorage and Cookies?
+localStorage: stores data with no expiration date, and gets cleared only through JavaScript, or clearing the Browser Cache / Locally Stored Data
+
+sessionStorage: similar to localStorage but expires when the browser closed (not the tab).
+
+Cookie: stores data that has to be sent back to the server with subsequent requests. Its expiration varies based on the type and the expiration duration can be set from either server-side or client-side (normally from server-side).
+
+Cookies are primarily for server-side reading (can also be read on client-side), localStorage and sessionStorage can only be read on client-side.
