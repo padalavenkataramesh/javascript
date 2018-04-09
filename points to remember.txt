@@ -1,0 +1,10 @@
+Points to Remember :
+
+-null and undefined are primitive values in JavaScript.
+-A null value means absence.
+-An undefined value means lack of value.
+-A null or undefined value evalutes to false in conditional expression.
+
+
+- Dom,Browser object model(bom), array, string etc  everything object. 
+
