@@ -1,0 +1,19 @@
+javascript ref urls:
+--------------------
+-W3 schools
+https://www.w3schools.com/js/js_intro.asp
+
+- 	Microsoft docs
+https://docs.microsoft.com/en-us/scripting/javascript/data-types-javascript
+
+-MDN web docs
+https://developer.mozilla.org/bm/docs/Web/JavaScript
+
+-Learn Js
+http://javascriptissexy.com/understand-javascript-closures-with-ease/
+
+-Tutorial Tutor
+http://www.tutorialsteacher.com/javascript
+
+-Javascript Tests
+https://app.codility.com/programmers/
