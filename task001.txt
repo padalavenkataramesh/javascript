@@ -1,0 +1,58 @@
+serviceAid tasks:
+
+javascript: 
+
+1) 
+[1,2,3
+4,5,6
+7,8,9]
+
+sum of crosses.
+
+solution:
+----------
+
+var x = [[1,2,3],[4,5,6],[7,8,9]];
+
+var first_cross_sum = 0; 
+
+for(i=0;i<x.length;i++){
+
+	
+	y = x[i];
+
+	first_cross_sum += y[i];
+}
+console.log(first_cross_sum);
+
+
+var second_cross_sum = 0; 
+
+for(i=x.length-1;i>=0;i--){
+
+	
+	y = x[i];
+
+	second_cross_sum  += y[i];
+}
+
+console.log(second_cross_sum );
+
+
+
+
+2) 
+console.log('1');
+console.log(setTimeout('2',3000));
+console.log(setTimeout('3',4000));
+console.log(setTimeout('10000',4000));
+console.log('4');
+
+output
+1,1,2,3,4
+
+solutoin: 
+first settimeout function will display 1 and second settimeout function display 2 and rest of settimeout fucntions will increase 1 value and normal values printed asusal.
+
+
+
