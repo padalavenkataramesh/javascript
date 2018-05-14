@@ -48,8 +48,17 @@ console.log(setTimeout('3',4000));
 console.log(setTimeout('10000',4000));
 console.log('4');
 
-output
+//output
 1,1,2,3,4
+
+// second
+console.log(setInterval('2',3000));
+console.log(setInterval('2',4000));
+console.log(setInterval('2',5000));
+console.log(setInterval('2',6000));
+
+//output
+1,2,3,4
 
 solutoin: 
 first settimeout function will display 1 and second settimeout function display 2 and rest of settimeout fucntions will increase 1 value and normal values printed asusal.
